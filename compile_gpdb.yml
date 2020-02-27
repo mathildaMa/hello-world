@@ -7,10 +7,11 @@ inputs:
   - name: libquicklz-devel-installer
     optional: true
   - name: python-tarball
+  - name: task_file
 outputs:
   - name: gpdb_artifacts
 run:
-  path: /home/mjw/data/code/gpdb/concourse/scripts/compile_gpdb.bash
+  path: task_file/compile_gpdb.bash
 params:
   TARGET_OS: 
   TARGET_OS_VERSION:
